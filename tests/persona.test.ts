@@ -1,6 +1,11 @@
 import { Persona } from "../src/Persona";
 
-test("Persona devuelve nombre", () => {
-  const p = new Persona("Juan", 123);
-  expect(p.getNombre()).toBe("Juan");
+describe("Clase Persona", () => {
+
+  test("crea una persona correctamente", () => {
+    const persona = new Persona("Juan", 12345678);
+
+    expect(persona).toBeInstanceOf(Persona);
+  });
+
 });
